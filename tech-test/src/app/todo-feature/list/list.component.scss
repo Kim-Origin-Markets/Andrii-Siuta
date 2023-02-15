@@ -1,0 +1,26 @@
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__isEnabled {
+    margin-left: 10px;
+  }
+}
+
+.card-container {
+  display: flex;
+  flex: 1 0 auto;
+  margin-top: 20px;
+  flex-wrap: wrap;
+
+  &__title {
+    display: flex;
+    align-self: center;
+  }
+}

@@ -1,0 +1,28 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+.tui-form__row:last-child {
+  display: flex;
+
+}
+
+.add-form {
+  &__done {
+    margin-left: 10px;
+    color: var(--tui-base-06);
+    line-height: 20px;
+  }
+
+  &__submit-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  &__submit {
+    display: flex;
+  }
+}
+

@@ -1,0 +1,39 @@
+:host {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.card {
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+
+  &--done {
+    border: 1px solid var(--tui-positive);
+  }
+
+  &--undone {
+    border: 1px solid var(--tui-negative);
+  }
+
+  &__field {
+
+  }
+
+  &__action-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__action-button {
+    margin: 5px;
+  }
+}

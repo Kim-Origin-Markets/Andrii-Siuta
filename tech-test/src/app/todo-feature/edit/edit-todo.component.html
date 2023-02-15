@@ -1,0 +1,58 @@
+<form
+  class="add-form"
+  [formGroup]="editForm"
+  (ngSubmit)="onSubmit()">
+  <div class="tui-row tui-row_sme">
+    <div class="tui-col_8">
+      <div class="tui-form__row">
+        <h3 class="tui-form__header tui-form__header_margin-top_none">Add Todo Form</h3>
+        <tui-input
+          formControlName="id"
+          [required]="true">
+          Id
+        </tui-input>
+      </div>
+
+      <div class="tui-form__row">
+        <tui-input
+          formControlName="label"
+          [required]="true">
+          Label
+        </tui-input>
+      </div>
+
+      <div class="tui-form__row">
+        <tui-text-area
+          formControlName="description"
+          [required]="true">
+          Description
+        </tui-text-area>
+      </div>
+
+      <div class="tui-form__row">
+        <tui-input
+          formControlName="category"
+          [required]="true">
+          Category
+        </tui-input>
+      </div>
+
+      <div class="tui-form__row">
+        <tui-checkbox
+          formControlName="done">
+        </tui-checkbox>
+        <span class="add-form__done tui-text_body-m-2">Done</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="add-form__submit-wrapper">
+    <button
+      type="submit"
+      class="add-form__submit
+      tui-button tui-button_primary tui-button_size_m tui-button_full-width"
+      tuiButton>
+      Add Item
+    </button>
+  </div>
+</form>
