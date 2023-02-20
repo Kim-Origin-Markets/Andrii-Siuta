@@ -1,0 +1,26 @@
+// other styles
+
+:host {
+  box-shadow: 0 0.125rem 1rem rgb(0 0 0 / 8%);
+  // fix for Safari to prevent tabs underline above sidebar
+  display: flex;
+  flex: 0 0 auto;
+  height: 100px;
+  padding: 0 1.25rem;
+  background: var(--tui-base-01);
+  border-bottom: 1px solid var(--tui-base-03);
+}
+
+.action-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  .action {
+    align-self: center;
+    margin-left: 20px;
+    align-items: center;
+  }
+}
+

@@ -1,0 +1,42 @@
+<div
+  [class.card--done]="item.done"
+  [class.card--undone]="!item.done"
+  class="card">
+  <div class="card__field">
+    id: {{ item.id }}
+  </div>
+
+  <div class="card__field">
+    label: {{ item.label }}
+  </div>
+
+  <div class="card__field">
+    Description: {{ item.description }}
+  </div>
+
+  <div class="card__field">
+    category: {{ item.category }}
+  </div>
+
+  <div class="card__field">
+    status: {{ item.done }}
+  </div>
+
+  <div class="card__action-container">
+    <button
+      (click)="onAction(actions.DELETE, item.id)"
+      class="card__action-button"
+      size="s"
+      tuiButton>
+      Delete
+    </button>
+
+    <button
+      (click)="onAction(actions.EDIT, item.id)"
+      class="card__action-button"
+      size="s"
+      tuiButton>
+      Edit
+    </button>
+  </div>
+</div>
